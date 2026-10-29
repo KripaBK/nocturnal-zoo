@@ -3,6 +3,7 @@
 :root {
     --bg: #fdf6e3;
     --fg: #2b2b2b;
+    --accent: #550000;
     --accent: #3986e3;
 }
 
@@ -97,6 +98,23 @@ a {
 
 
 /* ===== Navigation menu (Role B) ===== */
+.site-nav ul {
+    display: none;
+}
+
+.site-nav ul.open {
+    display: block;
+}
+
+@media (min-width: 40rem) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .site-nav ul {
+        display: block;
+    }
+}
 
 
 
